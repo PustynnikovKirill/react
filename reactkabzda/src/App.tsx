@@ -1,24 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+    let [a,setA] = useState(1)
+    const conside=()=>{
+       setA(++a)
+        console.log(a)
+    }
+    let [b,setB]=useState(0)
+    const zero =()=>{
+     setB(a=b)
+        console.log (b)
+    }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1>{a}</h1>
+     <button onClick={conside}>number</button>
+     <button onClick={zero}>0</button>
     </div>
   );
 }
