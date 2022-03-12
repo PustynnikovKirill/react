@@ -8,10 +8,9 @@ function App() {
        setA(++a)
         console.log(a)
     }
-    let [b,setB]=useState(0)
     const zero =()=>{
      setA(0)
-        console.log (b)
+        console.log (0)
     }
   return (
     <div className="App">
