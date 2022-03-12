@@ -10,7 +10,7 @@ function App() {
     }
     let [b,setB]=useState(0)
     const zero =()=>{
-     setB(a=b)
+     setA(0)
         console.log (b)
     }
   return (
