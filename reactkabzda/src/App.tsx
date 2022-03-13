@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
     const [money, setMoney] = useState([
-        {banknots: 'Dollars', value: 100, number: ' a1234567890'},git
+        {banknots: 'Dollars', value: 100, number: ' a1234567890'},
         {banknots: 'Dollars', value: 50, number: ' z1234567890'},
         {banknots: 'RUBLS', value: 100, number: ' w1234567890'},
         {banknots: 'Dollars', value: 100, number: ' e1234567890'},
